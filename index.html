@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>WowInSite
+            </title>
+            <link rel="shortcut icon" type="x-icon" href="1darkbluegeng.png">
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+            </head>
+            <body>
+                <div class="main">
+                    <nav>
+                        <div class="logo">
+                            <img src="wiser (1).png">
+                        </div>
+                        <div class="menu-bar">
+                            <ul>
+                                <li class="active"><a href="file:///D:/Client/my%20website/geng/2homeindex.html#"><i class="fa-solid fa-house"></i>Home</a></li>
+                                <li><a href="#"><i class="fa-solid fa-language"></i>Program</a>
+                                    <div class="sub-menu-1">
+                                        <ul>
+                                            <li><a href="file:///D:/Client/my%20website/geng/index.html">Javascript</a></li>
+                                            <li><a href="file:///D:/Client/my%20website/geng/2index.html">Java</a></li>
+                                            <li><a href="file:///D:/Client/my%20website/geng/3index.html">C++</a></li>
+                                            <li><a href="file:///D:/Client/my%20website/geng/4index.html">Python</a></li>
+                                        </ul>
+                                    </div>
+                                    </li>
+                                    <li><a href="#"><i class="fa-solid fa-language"></i>Markup</a>
+                                             <div class="sub-menu-1">
+                                        <ul>
+                                            <li><a href="file:///D:/Client/my%20website/geng/index.html">Javascript</a></li>
+                                            <li><a href="file:///D:/Client/my%20website/geng/2index.html">Java</a></li>
+                                            <li><a href="file:///D:/Client/my%20website/geng/3index.html">C++</a></li>
+                                            <li><a href="file:///D:/Client/my%20website/geng/4index.html">Python</a></li>
+                                        </ul>
+                                    </div></li>
+                                    <li><a href="#"><i class="fa-solid fa-cubes"></i>Tester</a></li>
+                                </ul>
+                </nav>
+                <div class="information">
+                    <div class="overlay"></div>
+                    <img src="1darkbluegeng.png" class="onelogo">
+                    <div id="circle">
+                        <div class="feature one">
+                        <img src="start-button.png">
+                        <div>
+                        <h1>Origin</h1>
+                        <p>Where it started</p>
+                        </div>
+                        </div>
+                        <div class="feature two">
+                        <img src="question-mark.png">
+                        <div>
+                        <h1>What</h1>
+                        <p>Is the function</p>
+                        </div>
+                        </div>
+                        <div class="feature three">
+                        <img src="thingking.png">
+                        <div>
+                        <h1>Who</h1>
+                        <p>Created it</p>
+                        </div>
+                            </div>
+                        <div class="feature four">
+                            <img src="history .png">
+                            <div>
+                            <h1>History</h1>
+                            <p>Of the content</p>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <img src="upload.png" id="upbtn">
+                <h3>What do we have?</h3>
+                <img src="upload.png" id="downbtn">
+            </div>
+
+            <script>
+                var circle = document.getElementById("circle");
+                var upbtn = document.getElementById("upbtn");
+                var downbtn = document.getElementById("downbtn");
+
+                var rotateValue = circle.style.transform;
+                var rotateSum;
+
+                upbtn.onclick = function()
+                {
+                    rotateSum = rotateValue + "rotate(-90deg)";
+                    circle.style.transform = rotateSum;
+                    rotateValue = rotateSum;
+                }
+                downbtn.onclick = function()
+                {
+                    rotateSum = rotateValue + "rotate(90deg)";
+                    circle.style.transform = rotateSum;
+                    rotateValue = rotateSum;
+                }
+            </script>
+                </body>
+                </html>
